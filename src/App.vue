@@ -26,8 +26,4 @@ export default {
   box-sizing: border-box;
   background-color: #0D1017;
 }
-
-.app {
-  margin: 0 0;
-}
 </style>
