@@ -48,15 +48,6 @@ export default {
     transition: .2s;
 }
 
-// @media screen and (height: 100%) {
-//     .main__footer {
-//         position: absolute;
-//         bottom: 0;
-//         left: 0;
-//         width: 100%;
-//     }
-// }
-
 @media screen and (max-height: 1440px) {
     .main__footer {
         position: relative;
