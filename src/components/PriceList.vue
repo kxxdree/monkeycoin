@@ -118,8 +118,36 @@ export default {
 }
 
 @media screen and (min-width: 2160px) {
-  .main-login__container_back-data  {
-  width: 100rem;
+
+  .main-login__title {
+    font-size: 5rem;
+  }
+
+  .main-login__subtitle {
+    max-width: 60%;
+    font-size: 3rem;
+  }
+
+  .main-login__container {
+    max-width: 100%;
+  }
+
+  .main-login__container_info {
+    max-width: 70%;
+    font-size: 2rem;
+
+    &_text {
+      width: 15rem;
+    }
+  }
+
+  .main-login__container_back-data {
+    min-width: 70%;
+
+    &_span {
+      font-size: 2rem;
+      width: 15rem;
+    }
   }
 }
 </style>

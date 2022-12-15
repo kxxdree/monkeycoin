@@ -34,7 +34,7 @@
           <img class="main__container_item_logo" src="../assets/images/image 3.jpg" alt="Лого">
         </div>
       </div>
-      <footer-vue></footer-vue>
+      <!-- <footer-vue></footer-vue> -->
     </div>
   </div>
 </template>
@@ -64,6 +64,7 @@ export default {
   flex-direction: column;
   color: white;
   font-family: 'Comic Neue', sans-serif;
+  margin-bottom: 3rem;
 
   &_title {
     margin: 3rem auto;

@@ -114,5 +114,14 @@ export default {
     opacity: .8;
     transition: .2s;
 }
+@media screen and (min-width: 2160px) {
+    .auth__input {
+        font-size: 3rem;
+        width: 50rem;
+    }
 
+    .auth__sign-button {
+        font-size: 2rem;
+    }
+}
 </style>

@@ -122,4 +122,15 @@ export default {
         padding: 10rem;
     }
 }
+
+@media screen and (min-width: 2160px) {
+    .auth__input {
+        font-size: 3rem;
+        width: 50rem;
+    }
+
+    .auth__sign-button {
+        font-size: 2rem;
+    }
+}
 </style>

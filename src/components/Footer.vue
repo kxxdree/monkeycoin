@@ -14,6 +14,9 @@ export default {
 <style lang="scss">
 .main__footer {
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-self: flex-end;
     margin-top: 4rem;
     height: 4rem;
     background-color: #17191F;
@@ -43,4 +46,5 @@ export default {
     opacity: .7;
     transition: .2s;
 }
+
 </style>
