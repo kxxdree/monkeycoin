@@ -9,6 +9,7 @@
       </h2>
 
       <div class="main__container_items">
+        <div class="main__container_items_wrapper">
         <div class="main__container_item">
           <p class="main__container_item_text">Регистрируйтесь на платформе MonkeyСoin! Мы предоставляем удобный сервис
             и бонус для новых пользователей: 5% скидку на все валюты, которая позволит вам начать торговать на бирже с
@@ -33,6 +34,7 @@
           </form>
           <img class="main__container_item_logo" src="../assets/images/image 3.jpg" alt="Лого">
         </div>
+      </div>
       </div>
       <!-- <footer-vue></footer-vue> -->
     </div>
@@ -92,8 +94,14 @@ export default {
   margin: auto 10rem;
 }
 
+.main__container_items_wrapper {
+  margin: auto;
+  width: 100%;
+}
+
 .main__container_item {
   display: flex;
+  margin: auto;
   gap: 7rem;
   max-height: 34rem;
   max-width: 100rem;
