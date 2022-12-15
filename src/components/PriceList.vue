@@ -1,72 +1,63 @@
 <template>
-    <div>
-        <p class="main-login__title">Курс биткоина</p>
-      <p></p>
-      <p class="main-login__subtitle">{{ prices.disclaimer }}</p>
-      <div class="main-login__container">
-        <div class="main-login__container_info">
-          <p class="main-login__container_info_text">Код валюты</p>
-          <p class="main-login__container_info_text">Наименование валюты</p>
-          <p class="main-login__container_info_text">Цена за 1 Bitcoin</p>
-        </div>
+  <div>
+    <p class="main-login__title">Курс биткоина</p>
+    <p></p>
+    <p class="main-login__subtitle">{{ prices.disclaimer }}</p>
+    <div class="main-login__container">
+      <div class="main-login__container_info">
+        <p class="main-login__container_info_text">Код валюты</p>
+        <p class="main-login__container_info_text">Наименование валюты</p>
+        <p class="main-login__container_info_text">Цена за 1 Bitcoin</p>
+      </div>
 
-        <div
-          v-for="item in prices.bpi"
-          :key="item.id"
-          class="main-login__container_back-data"
-        >
-          <span class="main-login__container_back-data_span">{{
+      <div v-for="item in prices.bpi" :key="item.id" class="main-login__container_back-data">
+        <span class="main-login__container_back-data_span">{{
             item.code
-          }}</span>
-          <span class="main-login__container_back-data_span">{{
+        }}</span>
+        <span class="main-login__container_back-data_span">{{
             item.description
-          }}</span>
-          <span
-            style="color: #005600"
-            class="main-login__container_back-data_span"
-            >{{ item.rate }}</span
-          >
-        </div>
+        }}</span>
+        <span style="color: #005600" class="main-login__container_back-data_span">{{ item.rate }}</span>
       </div>
     </div>
+  </div>
 </template>
 <script>
 import axios from "axios";
 
 export default {
-    data() {
-        return {
-            prices: {
-                // bpi:{
-                //     bpiData:{
-                //         code:'',
-                //         description:'',
-                //         rate:'',
-                //         symbol:''
-                //     }
-                // }
-            },
-            searchForCurrency: "",
-            isInfoPopupVisible: false,
-            balance: '',
-            balanceVisible: false,
-        };
-    },
-    
-    mounted() {
-        axios
-            .get("https://api.coindesk.com/v1/bpi/currentprice.json")
-            .then((response) => {
-                this.prices = response.data;
-            })
-            .catch((e) => {
-                console.log(e.message);
-            });
-    },
+  data() {
+    return {
+      prices: {
+        // bpi:{
+        //     bpiData:{
+        //         code:'',
+        //         description:'',
+        //         rate:'',
+        //         symbol:''
+        //     }
+        // }
+      },
+      searchForCurrency: "",
+      isInfoPopupVisible: false,
+      balance: '',
+      balanceVisible: false,
+    };
+  },
+
+  mounted() {
+    axios
+      .get("https://api.coindesk.com/v1/bpi/currentprice.json")
+      .then((response) => {
+        this.prices = response.data;
+      })
+      .catch((e) => {
+        console.log(e.message);
+      });
+  },
 }
 </script>
 <style lang="scss">
-
 .main-login__title {
   color: white;
   font-size: 3rem;
@@ -123,6 +114,12 @@ export default {
     align-content: center;
     text-align: center;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 2160px) {
+  .main-login__container_back-data  {
+  width: 100rem;
   }
 }
 </style>
