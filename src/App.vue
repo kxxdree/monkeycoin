@@ -29,10 +29,10 @@ export default {
   background-color: #0D1017;
 }
 
-.app {
+/* .app {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} */
 </style>
