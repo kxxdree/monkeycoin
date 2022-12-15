@@ -15,7 +15,7 @@
             </router-link>
         </div>
         <price-list-vue></price-list-vue>
-        <footer-vue></footer-vue>
+        <!-- <footer-vue></footer-vue> -->
         <popupComponent v-if="isInfoPopupVisible" @openPopup="openPopup" />
     </div>
 </template>

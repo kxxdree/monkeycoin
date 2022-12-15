@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="app">
     <router-view></router-view>
+    <!-- <footer-vue></footer-vue> -->
   </div>
 </template>
 
@@ -10,9 +11,10 @@ import MainLogIn from './views/MainLogIn.vue'
 import SignInVue from './views/SignIn.vue';
 import MainLogOffVue from './views/MainLogOff.vue';
 import HomePageVue from './views/HomePage.vue';
+import FooterVue from './components/Footer.vue';
 
 export default {
-  components: { Register, MainLogIn, SignInVue, MainLogOffVue, HomePageVue },
+  components: { Register, MainLogIn, SignInVue, MainLogOffVue, HomePageVue, FooterVue },
 
 }
 </script>
@@ -25,5 +27,9 @@ export default {
   padding: 0;
   box-sizing: border-box;
   background-color: #0D1017;
+}
+
+.app {
+  height: 100%;
 }
 </style>

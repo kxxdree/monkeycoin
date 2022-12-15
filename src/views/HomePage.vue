@@ -28,7 +28,6 @@
 
         <div class="main__container_item">
           <form class="main__container_form">
-            <!-- <input class="main__container_form_input" type="text" placeholder="Введите вашу почту"> -->
             <router-link to="/register"><button
                 class="main__container_form_button">Зарегистрироваться</button></router-link>
           </form>
@@ -80,7 +79,7 @@ export default {
 }
 
 .main__container_title:first-child {
-  margin: 3rem auto 1rem;
+  margin: 5rem auto 2rem;
   font-size: 4rem;
 }
 

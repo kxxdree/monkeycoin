@@ -15,7 +15,7 @@
                 <button @click.prevent="sendForm" class="auth__sign-button">Зарегистрироваться</button>
             </form>
         </div>
-        <footer-vue></footer-vue>
+        <!-- <footer-vue></footer-vue> -->
     </div>
 </template>
 

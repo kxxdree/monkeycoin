@@ -22,7 +22,7 @@
       </div>
       <price-list-vue></price-list-vue>
     </main>
-    <footer-vue></footer-vue>
+    <!-- <footer-vue></footer-vue> -->
     <popupComponent v-if="isInfoPopupVisible" @openPopup="openPopup" />
   </div>
 </template>
