@@ -27,11 +27,7 @@ export default {
   background-color: #0D1017;
 }
 
-body {
-  min-height: 100vh;
-}
-
 .app {
-  min-height: 100vh;
+  margin: 0 0;
 }
 </style>

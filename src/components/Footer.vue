@@ -12,21 +12,19 @@ export default {
 }
 </script>
 <style lang="scss">
-
 .main__footer {
     display: flex;
-    position: relative;
     margin-top: 3rem;
     height: 3rem;
     background-color: #17191F;
-    
+
     &_container {
         display: flex;
         justify-content: space-between;
         margin: auto 10rem;
         width: 100%;
         background-color: #17191F;
-        
+
 
         &_text {
             color: white;
@@ -46,15 +44,22 @@ export default {
     transition: .2s;
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (height: 100%) {
     .main__footer {
-        margin-top: 10rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 2560px) {
     .main__footer {
-        margin-top: 10rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
 }
+
 </style>

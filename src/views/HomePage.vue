@@ -94,7 +94,7 @@ export default {
 .main__container_item {
   display: flex;
   gap: 7rem;
-  margin: auto 10rem;
+  margin: auto;
   max-height: 34rem;
   max-width: 100rem;
 

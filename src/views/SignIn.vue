@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="signin">
         <header-vue></header-vue>
         <div class="auth__container-page">
             <h1 class="auth-page__title">Авторизация</h1>
@@ -10,17 +10,20 @@
                 <button @click.prevent="sendForm" class="auth__sign-button">Войти</button>
             </form>
         </div>
+        <footer-vue></footer-vue>
     </div>
 </template>
 
 <script>
 import HeaderVue from '@/components/Header.vue';
+import FooterVue from '@/components/Footer.vue';
 
 import axios from 'axios'
 
 export default {
     components: {
         HeaderVue,
+        FooterVue
     },
 
     data() {

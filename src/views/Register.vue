@@ -15,17 +15,20 @@
                 <button @click.prevent="sendForm" class="auth__sign-button">Зарегистрироваться</button>
             </form>
         </div>
+        <footer-vue></footer-vue>
     </div>
 </template>
 
 <script>
 import HeaderVue from '@/components/Header.vue';
+import FooterVue from '@/components/Footer.vue';
 
 import axios from 'axios'
 
 export default {
     components: {
         HeaderVue,
+        FooterVue
     },
 
     data() {
