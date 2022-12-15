@@ -89,6 +89,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
+  margin: auto 10rem;
 }
 
 .main__container_item {
@@ -142,7 +143,7 @@ export default {
   transition: .2s;
 }
 
-@media screen and (min-width: 1600px) and (max-width: 1920px) {
+@media screen and (min-width: 1600px) {
   .main__container_form_button {
     width: 37rem;
     font-size: 3rem;
